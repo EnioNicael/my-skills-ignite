@@ -5,11 +5,15 @@ import {
   StyleSheet
 } from 'react-native';
 
-export function SkillCard() {
+/**
+ * 
+ * @param {skill} prop recebida do componente pai 
+ */
+export function SkillCard({ skill }) {
   return (
-    <TouchableOpacity key="1" style={styles.buttonSkill}>
+    <TouchableOpacity style={styles.buttonSkill}>
       <Text style={styles.textSkill}>
-        skill
+        {skill}
       </Text>
     </TouchableOpacity>
   )
