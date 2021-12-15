@@ -80,6 +80,7 @@ export default function Home() {
         placeholder="New skill"
         placeholderTextColor="#555"
         onChangeText={setNewSkill}
+        testID="input-skill"
       />
 
       <Button
